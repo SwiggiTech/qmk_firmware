@@ -28,5 +28,3 @@
 
 // Enable layer indication using these RGB matrix LEDs
 #define SWK_LAYER_LED_INDICES { 1, 2, 3, 4 }
-
-//#define STM32_ONBOARD_EEPROM_SIZE

@@ -1,9 +1,9 @@
 {
-    "manufacturer": "Daniel Raak",
+    "manufacturer": "Swiggitech",
     "maintainer": "SwiggityCricket",
     "processor": "STM32F042",
     "bootloader": "stm32-dfu",
-    "bootloader_instructions": "Hold the rear-left button while powering on",
+    "bootloader_instructions": "Hold the rear-right button while powering on",
     "build":{
         "debounce_type": "sym_eager_pk", // https://docs.qmk.fm/feature_debounce_type
         "lto": true
