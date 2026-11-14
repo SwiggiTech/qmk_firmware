@@ -1,0 +1,41 @@
+{
+    "keyboard_name": "swiggiggikey",
+    "dynamic_keymap": {
+        "layer_count": 6
+    },
+    "debounce": 5,
+    "matrix_pins": {
+        "custom_lite": true,
+        "direct": [
+            ["B1", null, null, "B8"],
+            ["A1", "A6", "A0", "F0"]
+        ]
+    },
+    "ws2812": {
+        "driver": "bitbang", // TODO pwm?
+        "pin": "A5"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0, "label": "AUX1"},
+                {"matrix": [0, 1], "x": 1, "y": 0, "label": "AUX2"},
+                {"matrix": [1, 0], "x": 0, "y": 1, "label": "S1"},
+                {"matrix": [1, 1], "x": 1, "y": 1, "label": "S2"},
+                {"matrix": [1, 2], "x": 1, "y": 1, "label": "S3"},
+                {"matrix": [1, 3], "x": 1, "y": 1, "label": "S4"}
+
+            ]
+        }
+    },
+    "rgb_matrix": {
+        "layout": [
+            {"x": 0, "y": 0, "flags": 4},
+            {"matrix": [1, 0], "x": 44, "y": 0, "flags": 4},
+            {"matrix": [1, 1], "x": 88, "y": 0, "flags": 4},
+            {"matrix": [1, 2], "x": 132, "y": 0, "flags": 4},
+            {"matrix": [1, 3], "x": 176, "y": 0, "flags": 4},
+            {"x": 220, "y": 0, "flags": 4}
+        ]
+    }
+}

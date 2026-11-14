@@ -1,0 +1,88 @@
+{
+    "manufacturer": "Daniel Raak",
+    "maintainer": "SwiggityCricket",
+    "processor": "STM32F042",
+    "bootloader": "stm32-dfu",
+    "bootloader_instructions": "Hold the rear-left button while powering on",
+    "build":{
+        "debounce_type": "sym_eager_pk", // https://docs.qmk.fm/feature_debounce_type
+        "lto": true
+    },
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0483",
+        "vid": "0xA608"
+    },
+    "features": {
+        "extrakey": true,
+        "mousekey": false,
+        "nkro": false,
+        "rgb_matrix": true,
+        "rgblight": false,
+        "console": false,
+        "command": false,
+        "space_cadet": false,
+        "grave_esc": false,
+        "magic": false,
+        "deferred_exec": false
+    },
+    "rgb_matrix": {
+        "driver": "ws2812",
+        "sleep": true,
+        "max_brightness": 255,
+        "animations": {
+            "solid_color": true,
+            "gradient_left_right": true,
+            "breathing": true,
+            "cycle_all": true,
+            "cycle_left_right": true,
+            "jellybean_raindrops": true,
+            "hue_breathing": true,
+            "solid_reactive_simple": true,
+            "splash": true,
+            "starlight_smooth": true
+        },
+        "default": {
+            "animation": "solid_color",
+            "speed": 70,
+            "val": 100
+        }
+    },
+    "keycodes": [
+        {
+            "key": "SWK_CYCLE_HSV_VAL",
+            "label": "SWK - Cycle value component of lighting color",
+            "aliases": ["SWK_CV"]
+        },
+        {
+            "key": "SWK_CYCLE_HSV_SAT",
+            "label": "SWK - Cycle saturation component of lighting color",
+            "aliases": ["SWK_CS"]
+        },
+        {
+            "key": "SWK_CYCLE_ANIM_SPEED",
+            "label": "SWK - Cycle lighting animation speed",
+            "aliases": ["SWK_CD"]
+        },
+        {
+            "key": "SWK_LAYER_MOTAP0",
+            "label": "SWK - Hold to momentarily activate the next layer, tap to go to layer 0",
+            "aliases": ["SWK_MT0"]
+        },
+        {
+            "key": "SWK_LAYER_MOTAP1",
+            "label": "SWK - Hold to momentarily activate the next layer, tap to go to layer 1",
+            "aliases": ["SWK_MT1"]
+        },
+        {
+            "key": "SWK_LAYER_MOTAP2",
+            "label": "SWK - Hold to momentarily activate the next layer, tap to go to layer 2",
+            "aliases": ["SWK_MT2"]
+        },
+        {
+            "key": "SWK_LAYER_MOTAP3",
+            "label": "SWK - Hold to momentarily activate the next layer, tap to go to layer 3",
+            "aliases": ["SWK_MT3"]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "keyboard_name": "swiggikey_v2",
+    "dynamic_keymap": {
+        "layer_count": 6
+    },
+    "debounce": 5,
+    "matrix_pins": {
+        "custom_lite": true,
+        "direct": [
+            ["B1", "B8"],
+            ["A6", "F0"]
+        ]
+    },
+    "ws2812": {
+        "driver": "bitbang", // TODO pwm?
+        "pin": "A5"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0, "label": "AUX1"},
+                {"matrix": [0, 1], "x": 1, "y": 0, "label": "AUX2"},
+                {"matrix": [1, 0], "x": 0, "y": 1, "label": "S1"},
+                {"matrix": [1, 1], "x": 1, "y": 1, "label": "S2"}
+            ]
+        }
+    },
+    "rgb_matrix": {
+        "layout": [
+            {"x": 0, "y": 0, "flags": 4},
+            {"matrix": [1, 0], "x": 75, "y": 0, "flags": 4},
+            {"matrix": [1, 1], "x": 150, "y": 0, "flags": 4},
+            {"x": 220, "y": 0, "flags": 4}
+        ]
+    }
+}
